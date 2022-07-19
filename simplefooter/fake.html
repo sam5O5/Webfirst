@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>We love movies!</title>
+</head>
+
+<body>
+  <style media="screen">
+    footer {
+      position: fixed;
+      width: 100%;
+      height: 15%;
+      left: 0;
+      bottom: 10px;
+      background-color: #090910;
+      margin-bottom: 5px;
+      align: center;
+    }
+
+    center {
+      color: #F6F6F6;
+      font-family: 'Playfair Display', serif
+    }
+  </style>
+
+  <div class="container">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($movies as $movie) { ?>
+        <tr>
+          <td><?php echo $movie['name']; ?></td>
+          <td><?php echo $movie['year']; ?></td>
+        </tr>
+        <?php } ?>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <h3>
+      <center>
+        RacistPanda
+      </center>
+    </h3>
+    <p class="text-center" color:#F6F6F6>
+      <center>
+        Copyright &copy; RacistPanda
+    </p>
+    </center>
+  </footer>
+
+</body>
+
+</html>
